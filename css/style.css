@@ -1,0 +1,50 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #323232;
+  --basic-dull-black: #5A5A5A;
+  --basic-grey: #999999;
+  --basic-svg-red: #E84D37;
+  --basic-background-button-dull-orange: #D07058;
+  --basic-background-orange: #F26843;
+  --basic-background-bright-red: #E74A35;
+  --basic-background-green: #849D8F;
+  --basic-backlight-green: rgba(215, 242, 227, 0.75);
+  --basic-background-blue-blue: #8996A6;
+  --basic-backlight-blue-blue: rgba(218, 228, 239, 0.75);
+  --basic-background-brown: #9D8B84;
+  --basic-backlight-brown: rgba(239, 224, 218, 0.75);
+}
+
+/* Global */
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
