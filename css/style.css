@@ -706,7 +706,7 @@
 
 .catalog-article::before {
   content: "";
-  background-image: url(/img/heat.png);
+  background-image: url(../img/heat.png);
   width: 61px;
   height: 61px;
   position: absolute;
@@ -818,19 +818,19 @@
 }
 
 .features-list .features-item:first-child::before {
-  background-image: url(/img/icecream.svg);
+  background-image: url(../img/icecream.svg);
 }
 
 .features-list .features-item:nth-child(2)::before {
-  background-image: url(/img/caw.svg);
+  background-image: url(../img/caw.svg);
 }
 
 .features-list .features-item:nth-child(3)::before {
-  background-image: url(/img/leaf.svg);
+  background-image: url(../img/leaf.svg);
 }
 
 .features-list .features-item:last-child::before {
-  background-image: url(/img/temperature.svg);
+  background-image: url(../img/temperature.svg);
 }
 
 /* Index columns */
@@ -891,7 +891,7 @@
 
 .subscription {
   background-color: var(--basic-background-mail);
-  background-image: url(/img/mail-border.png);
+  background-image: url(../img/mail-border.png);
   color: var(--basic-dull-black);
   border-radius: 16px;
   margin-right: 27px;
@@ -959,7 +959,7 @@
   content: "";
   width: 80px;
   height: 140px;
-  background-image: url(/img/map-icecream.svg);
+  background-image: url(../img/map-icecream.svg);
   position: absolute;
   top: 136px;
   left: 266px;
@@ -1080,7 +1080,7 @@
   width: 15px;
   height: 13px;
   position: absolute;
-  background-image: url(/img/heart.svg);
+  background-image: url(../img/heart.svg);
   top: 4px;
   left: -19px;
 }
