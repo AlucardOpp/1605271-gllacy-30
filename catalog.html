@@ -7,13 +7,13 @@
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body inner-page container background-green">
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">
+    <a class="main-header-logo" href="index.html" aria-label="Ссылка на главную страницу">
       <img src="./img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
     </a>
     <nav class="main-navigation">
@@ -44,12 +44,13 @@
           </button>
           <div class="search-form-div">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="search-input" type="text" name="search" placeholder="Крем-брюле">
+              <input class="search-input" type="text" name="search" placeholder="Крем-брюле"
+                aria-label="Поле ввода для поиска">
             </form>
           </div>
         </li>
         <li class="useful-link-login">
-          <button class="button button-login" type="button">
+          <button class="button button-login" type="button" aria-label="Авторизация">
             <svg class="svg-enter" width="20" height="19" viewBox="0 0 20 19" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z" fill="white" />
@@ -59,9 +60,11 @@
             </svg>Вход</button>
           <div class="authorization-form-div">
             <form class="authorization-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="authorization-login" type="email" name="login" placeholder="email@example.com">
-              <input class="authorization-password" type="password" name="password" placeholder="......">
-              <button class="button button-enter" type="submit">Войти</button>
+              <input class="authorization-login" type="email" name="login" placeholder="email@example.com"
+                aria-label="Поле ввода для ввода почты">
+              <input class="authorization-password" type="password" name="password" placeholder="......"
+                aria-label="Поле ввода для ввода пароля">
+              <button class="button button-enter" type="submit" aria-label="Войти в аккаунт">Войти</button>
               <div class="authorization-form-links">
                 <a class="forgot-pass" href="">Забыли пароль?</a>
                 <a class="new-reg" href="">Новая регистрация</a>
@@ -70,8 +73,8 @@
           </div>
         </li>
         <li class="useful-link-cart">
-          <button class="button button-cart-not-empty" type="button"><svg class="svg-cart" width="21" height="20"
-              viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="button button-cart-not-empty" type="button" aria-label="Корзина"><svg class="svg-cart"
+              width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z"
                 fill="#343434" />
@@ -133,7 +136,8 @@
           <li class="filter-popularity-item">
             <fieldset>
               <legend><label for="filter-popularity">Сортировка:</label></legend>
-              <select class="select-sort" id="filter-popularity" name="popularity" value="по популярности" tabindex="0">
+              <select class="select-sort" id="filter-popularity" name="popularity" tabindex="0"
+                aria-label="Выбор сортировки">
                 <option selected>по популярности</option>
                 <option>сначала недорогие</option>
                 <option>сначала дорогие</option>
@@ -152,8 +156,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
+                <div class="toggle toggle-min" tabindex="0" aria-label="Минимальная цена"></div>
+                <div class="toggle toggle-max" tabindex="0" aria-label="Максимальная цена"></div>
               </div>
             </fieldset>
           </li>
@@ -164,22 +168,22 @@
                 <li class="filter-radio">
                   <input class="filter-input-radio visually-hidden" type="radio" id="filter-fat-zero" name="fat"
                     value="zero">
-                  <label for="filter-fat-zero">0%</label>
+                  <label for="filter-fat-zero" tabindex="0" aria-label="Жирность 0%">0%</label>
                 </li>
                 <li class="filter-radio">
                   <input class="filter-input-radio visually-hidden" type="radio" id="filter-fat-ten" name="fat"
                     value="ten" checked>
-                  <label for="filter-fat-ten">до 10%</label>
+                  <label for="filter-fat-ten" aria-label="Жирность до 10%">до 10%</label>
                 </li>
                 <li class="filter-radio">
                   <input class="filter-input-radio visually-hidden" type="radio" id="filter-fat-below-thirty" name="fat"
                     value="below-thirty">
-                  <label for="filter-fat-below-thirty">до 30%</label>
+                  <label for="filter-fat-below-thirty" tabindex="0" aria-label="Жирность до 30%">до 30%</label>
                 </li>
                 <li class="filter-radio">
                   <input class="filter-input-radio visually-hidden" type="radio" id="filter-fat-over-thirty" name="fat"
                     value="over-thirty">
-                  <label for="filter-fat-over-thirty">выше 30%</label>
+                  <label for="filter-fat-over-thirty" tabindex="0" aria-label="Жирность выше 30%">выше 30%</label>
                 </li>
               </ul>
             </fieldset>
@@ -191,30 +195,35 @@
                 <li class="filter-checkbox">
                   <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-filler-chocolate"
                     name="chocolate" checked>
-                  <label class="filler-label-chocolate" for="filter-filler-chocolate">шоколадные</label>
+                  <label class="filler-label-chocolate" for="filter-filler-chocolate"
+                    aria-label="Шоколадный наполнитель">шоколадные</label>
                 </li>
                 <li class="filter-checkbox">
                   <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-filler-sugar-topings"
                     name="sugar-topings" checked>
-                  <label class="filler-label-sugar-topings" for="filter-filler-sugar-topings">сахарные присыпки</label>
+                  <label class="filler-label-sugar-topings" for="filter-filler-sugar-topings"
+                    aria-label="Наполнитель сахарных присыпок">сахарные присыпки</label>
                 </li>
                 <li class="filter-checkbox">
                   <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-filler-fruits"
                     name="fruits">
-                  <label class="filler-label-fruits" for="filter-filler-fruits">фрукты</label>
+                  <label class="filler-label-fruits" for="filter-filler-fruits"
+                    aria-label="Фруктовый наполнитель">фрукты</label>
                 </li>
                 <li class="filter-checkbox">
                   <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-filler-syrups"
                     name="syrups">
-                  <label class="filler-label-syrups" for="filter-filler-syrups">сиропы</label>
+                  <label class="filler-label-syrups" for="filter-filler-syrups"
+                    aria-label="Сиропный наполнитель">сиропы</label>
                 </li>
                 <li class="filter-checkbox">
                   <input class="filter-input-checkbox visually-hidden" type="checkbox" id="filter-filler-jams"
                     name="jams">
-                  <label class="filler-label-sugar-jams" for="filter-filler-jams">джемы</label>
+                  <label class="filler-label-sugar-jams" for="filter-filler-jams"
+                    aria-label="Джемный наполнитель">джемы</label>
                 </li>
               </ul>
-              <button class="button filter-button" type="submit">Применить</button>
+              <button class="button filter-button" type="submit" aria-label="Применить фильтр">Применить</button>
             </fieldset>
           </li>
         </ul>
@@ -230,7 +239,8 @@
               alt="Изображение сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
             <p class="catalog-price"><span class="hits-span-price">310 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -240,7 +250,8 @@
               alt="Изображение сливочно-кофеейного мороженого с кусочками шоколада">
             <p class="catalog-price"><span class="hits-span-price">380 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -250,7 +261,8 @@
               alt="Изображение сливочно-клубничного мороженого с присыпкой из белого шоколада">
             <p class="catalog-price"><span class="hits-span-price">355 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -260,7 +272,8 @@
               alt="Изображение сливочного мороженого крем-брюле с карамельной подливкой">
             <p class="catalog-price"><span class="hits-span-price">415 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -270,7 +283,8 @@
               alt="Изображение сливочного мороженого с брусничным джемом">
             <p class="catalog-price"><span class="hits-span-price">325 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -280,7 +294,8 @@
               alt="Изображение сливочно-черничного мороженого с цельными ягодами черники">
             <p class="catalog-price"><span class="hits-span-price">410 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -290,7 +305,8 @@
               alt="Изображение cливочно-лимонного мороженого с карамельной присыпкой">
             <p class="catalog-price"><span class="hits-span-price">315 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -300,7 +316,8 @@
               alt="Изображение cливочного мороженого с шоколадной стружкой">
             <p class="catalog-price"><span class="hits-span-price">320 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -310,7 +327,8 @@
               alt="Изображение cливочно-ваниального мороженого с кусочками шоколада">
             <p class="catalog-price"><span class="hits-span-price">440 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -320,7 +338,8 @@
               alt="Изображение cливочного мороженого с ментоловым сиропом">
             <p class="catalog-price"><span class="hits-span-price">435 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -330,7 +349,8 @@
               alt="Изображение cливочного мороженого с кусочками шоколада">
             <p class="catalog-price"><span class="hits-span-price">355 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
@@ -340,16 +360,17 @@
               alt="Изображение cливочного мороженого с мятным сиропом">
             <p class="catalog-price"><span class="hits-span-price">420 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view">Быстрый просмотр</button>
+            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
+              просмотр</button>
           </article>
         </li>
       </ul>
       <ul class="pagination-list">
         <li><a class="pagination-current">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
+        <li><a href="#" aria-label="Вторая страница отсортированного мороженого">2</a></li>
+        <li><a href="#" aria-label="Третья страница отсортированного мороженого">3</a></li>
+        <li><a href="#" aria-label="Четвёртая страница отсортированного мороженого">4</a></li>
+        <li><a href="#" aria-label="Пятая страница отсортированного мороженого">5</a></li>
       </ul>
     </section>
   </main>
@@ -359,7 +380,7 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
         <li>
-          <a href="#" class="facebook-link">
+          <a href="#" class="facebook-link" aria-label="Ссылка на Фэйсбук">
             <span class="visually-hidden">Фэйсбук</span>
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -373,7 +394,7 @@
         </li>
         <li>
           <a href="#" class="vk-link">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually-hidden" aria-label="Ссылка на Вконтакте">Вконтакте</span>
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z"
@@ -391,7 +412,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="instagram-link">
+          <a href="#" class="instagram-link" aria-label="Ссылка на Инстаграм">
             <span class="visually-hidden">Инстаграм</span>
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -413,7 +434,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="twitter-link">
+          <a href="#" class="twitter-link" aria-label="Ссылка на Твиттер">
             <span class="visually-hidden">Твиттер</span>
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -438,7 +459,7 @@
     </section>
     <section class="footer-copyright">
       <h2 class="visually-hidden">Копирайт</h2>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на страницу курса HTML Academy">
         <span class="visually-hidden">Лого академии</span>
         <svg width="108" height="39" viewBox="0 0 108 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -477,7 +498,8 @@
             fill="white" />
         </svg>
       </a>
-      <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+      <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
+          aria-label="Ссылка на страницу курса HTML Academy">HTML Academy</a> © 2019</p>
     </section>
   </footer>
 </body>
