@@ -11,7 +11,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body container background-green">
+<body class="page-body slider-page container background-green">
   <header class="main-header">
     <div class="main-header-logo">
       <img src="./img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
@@ -94,21 +94,21 @@
     <section class="slider">
       <h2 class="visually-hidden presentation">Презентация мороженого</h2>
       <ul class="slider-list">
-        <li class="slider-item slide slide-current">
+        <li class="slider-item slide slider-first slide-current">
           <div class="slider-images-green">
           </div>
           <div class="slider-backlight-green"></div>
           <h3 class="slider-header">Крем-брюле и пломбир с малиновым джемом</h3>
           <a class="button slide-button" href="#">Давайте оба!</a>
         </li>
-        <li class="slider-item slide">
+        <li class="slider-item slide slider-second">
           <div class="slider-images-blue">
           </div>
           <div class="slider-backlight-blue"></div>
           <h3 class="slider-header">Шоколадный пломбир и лимонный сорбет</h3>
           <a class="button slide-button" href="#">Давайте оба!</a>
         </li>
-        <li class="slider-item slide">
+        <li class="slider-item slide slider-third">
           <div class="slider-images-brown">
           </div>
           <div class="slider-backlight-brown"></div>
@@ -117,9 +117,9 @@
         </li>
       </ul>
       <div class="slider-controls">
-        <button type="button" class="change-button current" aria-label="Первый слайд"></button>
-        <button type="button" class="change-button" aria-label="Второй слайд"></button>
-        <button type="button" class="change-button" aria-label="Третий слайд"></button>
+        <button type="button" class="change-button change-button-first current" aria-label="Первый слайд"></button>
+        <button type="button" class="change-button change-button-second" aria-label="Второй слайд"></button>
+        <button type="button" class="change-button change-button-third" aria-label="Третий слайд"></button>
       </div>
     </section>
 
@@ -399,10 +399,11 @@
       <p>
         <textarea placeholder="В свободной форме" class="feedback-comment" name="comment"></textarea>
       </p>
-      <button class="button feedback-submit-button" type="submit">Отправить</button>
+      <button class="button feedback-submit-button" type="submit" tabindex="0">Отправить</button>
     </form>
     <button type="button" class="close-button" aria-label="Закрыть"></button>
   </section>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
