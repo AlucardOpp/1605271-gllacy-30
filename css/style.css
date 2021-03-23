@@ -278,7 +278,6 @@
   top: 32px;
   z-index: 10;
   width: 143px;
-  display: flex;
   flex-direction: column;
   display: none;
 }
@@ -290,11 +289,11 @@
   margin-top: 6px;
 }
 
-.site-navigation .submenu li:nth-child(2) {
+.submenu li:nth-child(2) {
   margin-top: 8px;
 }
 
-.site-navigation .submenu li:last-child {
+.submenu li:last-child {
   margin-bottom: 7px;
 }
 
@@ -589,8 +588,7 @@
   flex-direction: column;
   text-align: end;
   padding: 0;
-  margin: 0;
-  margin-top: 16px;
+  margin: 16px 0 0 0;
 }
 
 .useful-buttons-tel {
@@ -640,10 +638,7 @@
   font-size: 35px;
   line-height: 41px;
   padding: 0;
-  margin: 0;
-  margin-left: 27px;
-  margin-bottom: 29px;
-  margin-top: -8px;
+  margin: -8px 0 29px 27px;
 }
 
 .cart-list {
@@ -653,12 +648,9 @@
   row-gap: 36px;
   border-bottom: 1px solid var(--basic-border-cart-list);
   padding: 0;
-  margin: 0;
+  margin: 0 14px 16px 15px;
   width: 510px;
-  margin-left: 15px;
-  margin-right: 14px;
   padding-bottom: 18px;
-  margin-bottom: 16px;
 }
 
 .cart-list .cart-item:first-child {
@@ -867,10 +859,7 @@
   font-size: 60px;
   line-height: 60px;
   padding: 0;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 37px;
+  margin: 0 auto 37px auto;
   width: 672px;
 }
 
@@ -910,10 +899,7 @@
 /* Special offers */
 
 .special-offers {
-  margin-top: 50px;
-  margin-left: 27px;
-  margin-right: 27px;
-  margin-bottom: 34px;
+  margin: 50px 27px 34px 27px;
 }
 
 .offers-list {
@@ -952,7 +938,6 @@
   font-size: 35px;
   line-height: 41px;
   padding: 0;
-  margin: 0;
   margin: 14px 0 17px 16px;
 }
 
@@ -960,8 +945,7 @@
   font-size: 18px;
   font-weight: bold;
   padding: 0;
-  margin: 0;
-  margin-left: 16px;
+  margin: 0 0 0 16px;
   width: 514px;
 }
 
@@ -1117,8 +1101,7 @@
   font-size: 24px;
   line-height: 30px;
   padding: 0;
-  margin: 0;
-  margin-left: 20px;
+  margin: 0 0 0 20px;
   padding-top: 24px;
   padding-bottom: 16px;
 }
@@ -1126,7 +1109,7 @@
 .features-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 75px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 485px 81px 482px;
@@ -1138,7 +1121,6 @@
   -moz-column-gap: 81px;
   column-gap: 81px;
   row-gap: 22px;
-  margin-left: 75px;
   padding-bottom: 30px;
 }
 
@@ -1279,8 +1261,7 @@
   border-radius: 16px;
   background-color: var(--basic-background-mail);
   padding: 30px 17px 29px 20px;
-  margin: 0 auto;
-  margin-top: 5px;
+  margin: 5px auto 0 auto;
   min-height: 151px;
 }
 
@@ -1331,12 +1312,11 @@
 
 .subscription-text {
   padding: 0;
-  margin: 0;
+  margin: -6px 0 0 0;
   grid-column: 1 / -1;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  margin-top: -6px;
 }
 
 .subscription-form button {
@@ -1650,10 +1630,7 @@
   font-size: 24px;
   line-height: 28px;
   color: var(--basic-black);
-  margin: 0;
-  margin-top: 20px;
-  margin-left: 23px;
-  margin-bottom: 26px;
+  margin: 20px 0 26px 23px;
 }
 
 .feedback p {
@@ -1698,6 +1675,7 @@
   margin-right: 25px;
   padding: 9px 24px 8px 24px;
   text-shadow: 0px 2px 5px var(--basic-text-shadow-slide-button);
+  cursor: pointer;
 }
 
 .close-button {
@@ -2161,12 +2139,10 @@
 .pagination-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 35px 30px 0;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  margin-bottom: 30px;
-  margin-right: 35px;
 }
 
 .pagination-list a {
