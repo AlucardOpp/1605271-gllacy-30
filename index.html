@@ -11,8 +11,8 @@
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body class="page-body slider-page container background-green">
-  <header class="main-header">
+<body class="page-body slider-page background-green">
+  <header class="main-header main-container">
     <div class="main-header-logo">
       <img src="./img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
     </div>
@@ -72,8 +72,8 @@
           </div>
         </li>
         <li>
-          <button class="button button-cart" type="button"><svg class="svg-cart" width="21" height="20"
-              aria-label="Корзина" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="button button-cart" href="#" aria-label="Корзина"><svg class="svg-cart" width="21" height="20"
+              viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z"
                 fill="white" />
@@ -83,7 +83,7 @@
               <path
                 d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z"
                 fill="white" />
-            </svg>Пусто</button>
+            </svg>Пусто</a>
         </li>
       </ul>
       <p class="magazine-information">с 10 до 20, ежедневно
@@ -94,7 +94,7 @@
 
   <main>
     <h1 class="visually-hidden">Кондитерский магазин Gllacy Shop</h1>
-    <section class="slider">
+    <section class="slider main-container">
       <h2 class="visually-hidden presentation">Презентация мороженого</h2>
       <ul class="slider-list">
         <li class="slider-item slide slider-first slide-current">
@@ -126,7 +126,7 @@
       </div>
     </section>
 
-    <section class="special-offers">
+    <section class="special-offers main-container">
       <h2 class="visually-hidden">Специальные предложения</h2>
       <ul class="offers-list">
         <li class="offers-item">
@@ -147,57 +147,57 @@
       </ul>
     </section>
 
-    <section class="hits">
+    <section class="hits main-container">
       <h2 class="visually-hidden">Хиты продаж</h2>
       <ul class="hits-list">
         <li class="hits-item">
-          <article class="hit-article hit-first">
-            <h3 class="hit-h">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+          <article class="hit-article">
+            <h3 class="hit-h"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
             <img class="hit-image" src="./img/hit-first-orange.jpg" width="267" height="267"
               alt="Изображение сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
             <p class="hits-price"><span class="hits-span-price">310 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="hits-item">
-          <article class="hit-article hit-second">
-            <h3 class="hit-h">Сливочно-кофейное с кусочками шоколада</h3>
+          <article class="hit-article">
+            <h3 class="hit-h"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
             <img class="hit-image" src="./img/hit-second-coffee.jpg" width="267" height="267"
               alt="Изображение сливочно-кофеейного мороженого с кусочками шоколада">
             <p class="hits-price"><span class="hits-span-price">380 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="hits-item">
-          <article class="hit-article hit-third">
-            <h3 class="hit-h">Сливочно-клубничное<br> с присыпкой из белого шоколада</h3>
+          <article class="hit-article">
+            <h3 class="hit-h"><a href="#">Сливочно-клубничное<br> с присыпкой из белого шоколада</a></h3>
             <img class="hit-image" src="./img/hit-third-strawberry.jpg" width="267" height="267"
               alt="Изображение Сливочно-клубничного мороженого с присыпкой из белого шоколада">
             <p class="hits-price"><span class="hits-span-price">355 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="hits-item">
-          <article class="hit-article hit-fourth">
-            <h3 class="hit-h">Сливочное крем-брюле<br> с карамельной подливкой</h3>
+          <article class="hit-article">
+            <h3 class="hit-h"><a href="#">Сливочное крем-брюле<br> с карамельной подливкой</a></h3>
             <img class="hit-image" src="./img/hit-fourth-caramel.jpg" width="267" height="267"
               alt="Изображение сливочного мороженого крем-брюле с карамельной подливкой">
             <p class="hits-price"><span class="hits-span-price">415 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
       </ul>
     </section>
 
-    <section class="features">
+    <section class="features main-container">
       <h2 class="visually-hidden">Преимущества</h2>
       <h3 class="features-header">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
         производства на развес
@@ -223,7 +223,7 @@
       </ul>
     </section>
 
-    <div class="index-columns">
+    <div class="index-columns main-container">
       <section class="blog-state">
         <h2><a class="blog-state-link" href="#">10 способов сервировки<br> фруктовых щербетов<br> к столу</a></h2>
         <p>Новое в нашем блоге</p>
@@ -252,23 +252,25 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6034633474942!2d30.321180581178766!3d59.938721856228796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616241589556!5m2!1sru!2sru"
           width="1200" height="430" allowfullscreen
           title="Магазин Gllacy Shop по улице Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
-        <div class="map-information">
-          <div class="map-wrapper">
-            <p class="address">Адрес главного офиса и офлайн-магазина:
-              <span class="map-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span>
-            </p>
-            <p class="tel">Для заказов по телефону:
-              <a class="map-tel" href="tel:+78124502525">8 812 450-25-25</a>
-              (с 10 до 20 ежедневно)
-            </p>
-            <button class="button feedback-button" type="button">Форма обратной связи</button>
+        <div class="map-container">
+          <div class="map-information">
+            <div class="map-wrapper">
+              <p class="address">Адрес главного офиса и офлайн-магазина:
+                <span class="map-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span>
+              </p>
+              <p class="tel">Для заказов по телефону:
+                <a class="map-tel" href="tel:+78124502525">8 812 450-25-25</a>
+                (с 10 до 20 ежедневно)
+              </p>
+              <button class="button feedback-button" type="button">Форма обратной связи</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer main-container">
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">

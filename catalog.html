@@ -11,8 +11,8 @@
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body class="page-body inner-page container background-green">
-  <header class="main-header">
+<body class="page-body inner-page inner-container background-green">
+  <header class="main-header inner-header">
     <a class="main-header-logo" href="index.html" aria-label="Ссылка на главную страницу">
       <img src="./img/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy Shop">
     </a>
@@ -73,8 +73,8 @@
           </div>
         </li>
         <li class="useful-link-cart">
-          <button class="button button-cart-not-empty" type="button" aria-label="Корзина"><svg class="svg-cart"
-              width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="button button-cart-not-empty" href="#" aria-label="Корзина"><svg class="svg-cart" width="21"
+              height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z"
                 fill="#343434" />
@@ -86,7 +86,7 @@
                 fill="#343434" />
               <path d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="#E84D37" />
             </svg>
-            2 товара</button>
+            2 товара</a>
           <div class="authorization-cart">
             <form class="authorization-cart-form" action="https://echo.htmlacademy.ru" method="post">
               <ul class="cart-list">
@@ -234,143 +234,162 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <h3 class="item-h"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
             <img class="catalog-image" src="./img/hit-first-orange.jpg" width="267" height="267"
               alt="Изображение сливочного мороженого с апельсиновым джемом и цитрусовой стружкой">
             <p class="catalog-price"><span class="hits-span-price">310 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочно-кофейное с кусочками шоколада</h3>
+            <h3 class="item-h"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
             <img class="catalog-image" src="./img/hit-second-coffee.jpg" width="267" height="267"
               alt="Изображение сливочно-кофеейного мороженого с кусочками шоколада">
             <p class="catalog-price"><span class="hits-span-price">380 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <h3 class="item-h"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
             <img class="catalog-image" src="./img/hit-third-strawberry.jpg" width="267" height="267"
               alt="Изображение сливочно-клубничного мороженого с присыпкой из белого шоколада">
             <p class="catalog-price"><span class="hits-span-price">355 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочное крем-брюле<br> с карамельной подливкой</h3>
+            <h3 class="item-h"><a href="#">Сливочное крем-брюле<br> с карамельной подливкой</a></h3>
             <img class="catalog-image" src="./img/hit-fourth-caramel.jpg" width="267" height="267"
               alt="Изображение сливочного мороженого крем-брюле с карамельной подливкой">
             <p class="catalog-price"><span class="hits-span-price">415 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочное с брусничным<br> джемом</h3>
+            <h3 class="item-h"><a href="#">Сливочное с брусничным<br> джемом</a></h3>
             <img class="catalog-image" src="./img/catalog-strawberry.jpg" width="267" height="267"
               alt="Изображение сливочного мороженого с брусничным джемом">
             <p class="catalog-price"><span class="hits-span-price">325 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочно-черничное с цельными ягодами черники</h3>
+            <h3 class="item-h"><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
             <img class="catalog-image" src="./img/catalog-blueberry.jpg" width="267" height="267"
               alt="Изображение сливочно-черничного мороженого с цельными ягодами черники">
             <p class="catalog-price"><span class="hits-span-price">410 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочно-лимонное с карамельной присыпкой</h3>
+            <h3 class="item-h"><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
             <img class="catalog-image" src="./img/catalog-lemon.jpg" width="267" height="267"
               alt="Изображение cливочно-лимонного мороженого с карамельной присыпкой">
             <p class="catalog-price"><span class="hits-span-price">315 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочное с шоколадной стружкой</h3>
+            <h3 class="item-h"><a href="#">Сливочное с шоколадной стружкой</a></h3>
             <img class="catalog-image" src="./img/catalog-chocolate-chips.jpg" width="267" height="267"
               alt="Изображение cливочного мороженого с шоколадной стружкой">
             <p class="catalog-price"><span class="hits-span-price">320 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочно-ванильное<br> с кусочками шоколада</h3>
+            <h3 class="item-h"><a href="#">Сливочно-ванильное<br> с кусочками шоколада</a></h3>
             <img class="catalog-image" src="./img/catalog-vanilla.jpg" width="267" height="267"
               alt="Изображение cливочно-ваниального мороженого с кусочками шоколада">
             <p class="catalog-price"><span class="hits-span-price">440 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочноe с ментоловым сиропом</h3>
+            <h3 class="item-h"><a href="#">Сливочноe с ментоловым сиропом</a></h3>
             <img class="catalog-image" src="./img/catalog-menthol.jpg" width="267" height="267"
               alt="Изображение cливочного мороженого с ментоловым сиропом">
             <p class="catalog-price"><span class="hits-span-price">435 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочное с кусочками черного шоколада</h3>
+            <h3 class="item-h"><a href="#">Сливочное с кусочками черного шоколада</a></h3>
             <img class="catalog-image" src="./img/catalog-chocolate-pieces.jpg" width="267" height="267"
               alt="Изображение cливочного мороженого с кусочками шоколада">
             <p class="catalog-price"><span class="hits-span-price">355 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого" href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
         <li class="catalog-item">
           <article class="catalog-article">
-            <h3 class="item-h">Сливочное с мятным сиропом</h3>
+            <h3 class="item-h"><a href="#">Сливочное с мятным сиропом</a></h3>
             <img class="catalog-image" src="./img/catalog-mint.jpg" width="267" height="267"
               alt="Изображение cливочного мороженого с мятным сиропом">
             <p class="catalog-price"><span class="hits-span-price">420 <span>&#8381;</span></span>/кг</p>
             <div class="catalog-hover"></div>
-            <button class="button button-quick-view" aria-label="Быстрый просмотр выбранного мороженого">Быстрый
-              просмотр</button>
+            <a class="button button-quick-view last-quick-view" aria-label="Быстрый просмотр выбранного мороженого"
+              href="#">Быстрый
+              просмотр</a>
           </article>
         </li>
       </ul>
       <ul class="pagination-list">
+        <li>
+          <a aria-label="Ссылка на предыдущую страницу" class="left-arrow"><svg width="7" height="12" viewBox="0 0 7 12"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.15889 6.34125L6.06761 11.8512C6.1703 11.9465 6.30937 12 6.45436 12C6.59934 12 6.73841 11.9465 6.84111 11.8512C6.89146 11.8048 6.93142 11.7495 6.95869 11.6885C6.98596 11.6276 7 11.5623 7 11.4962C7 11.4302 6.98596 11.3649 6.95869 11.304C6.93142 11.243 6.89146 11.1877 6.84111 11.1412L1.3084 6.00125L6.84111 0.831247C6.89146 0.784766 6.93142 0.729465 6.95869 0.668535C6.98596 0.607606 7 0.542253 7 0.476248C7 0.410242 6.98596 0.344889 6.95869 0.283959C6.93142 0.22303 6.89146 0.167728 6.84111 0.121247C6.73357 0.0364304 6.59506 -0.00654793 6.45436 0.00124741C6.38391 0.000448227 6.31406 0.013381 6.2493 0.0392141C6.18454 0.0650473 6.12631 0.103209 6.07835 0.151247L0.15889 5.63125C0.108543 5.67773 0.0685816 5.73303 0.0413108 5.79396C0.01404 5.85489 0 5.92024 0 5.98625C0 6.05225 0.01404 6.11761 0.0413108 6.17854C0.0685816 6.23947 0.108543 6.29477 0.15889 6.34125Z"
+                fill="white" fill-opacity="0.2" />
+            </svg>
+          </a>
+        </li>
         <li><a class="pagination-current">1</a></li>
         <li><a href="#" aria-label="Вторая страница отсортированного мороженого">2</a></li>
         <li><a href="#" aria-label="Третья страница отсортированного мороженого">3</a></li>
         <li><a href="#" aria-label="Четвёртая страница отсортированного мороженого">4</a></li>
         <li><a href="#" aria-label="Пятая страница отсортированного мороженого">5</a></li>
+        <li>
+          <a href="#" aria-label="Ссылка на следующую страницу" class="right-arrow"><svg width="7" height="12"
+              viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.84111 5.65875L0.932395 0.148752C0.829699 0.05349 0.690626 0 0.545642 0C0.400659 0 0.261586 0.05349 0.15889 0.148752C0.108543 0.195234 0.0685817 0.250534 0.041311 0.311464C0.0140403 0.372393 0 0.437746 0 0.503752C0 0.569758 0.0140403 0.635111 0.041311 0.69604C0.0685817 0.75697 0.108543 0.812271 0.15889 0.858752L5.6916 5.99875L0.15889 11.1688C0.108543 11.2152 0.0685817 11.2705 0.041311 11.3315C0.0140403 11.3924 0 11.4577 0 11.5238C0 11.5898 0.0140403 11.6551 0.041311 11.716C0.0685817 11.777 0.108543 11.8323 0.15889 11.8788C0.266426 11.9636 0.404942 12.0065 0.545642 11.9988C0.616091 11.9996 0.68594 11.9866 0.750698 11.9608C0.815455 11.935 0.873688 11.8968 0.921651 11.8488L6.84111 6.36875C6.89146 6.32227 6.93142 6.26697 6.95869 6.20604C6.98596 6.14511 7 6.07976 7 6.01375C7 5.94775 6.98596 5.88239 6.95869 5.82146C6.93142 5.76053 6.89146 5.70523 6.84111 5.65875Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
       </ul>
     </section>
   </main>

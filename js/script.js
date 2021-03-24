@@ -2,6 +2,10 @@ const feedbackButton = document.querySelector(".feedback-button");
 const feedbackPopup = document.querySelector(".feedback");
 const feedbackCloseButton = document.querySelector(".close-button");
 const feedbackBackground = document.querySelector(".overlay-feedback");
+const feedbackForm = document.querySelector(".feedback-form");
+const feedbackFormNAS = feedbackPopup.querySelector(".feedback-nameandsurname");
+const feedbackFormEmail = feedbackPopup.querySelector(".feedback-email");
+const feedbackFormComment = feedbackPopup.querySelector(".feedback-comment");
 let firstSliderButton = document.querySelector(".change-button-first");
 let secondSliderButton = document.querySelector(".change-button-second");
 let thirdSliderButton = document.querySelector(".change-button-third");
@@ -19,14 +23,25 @@ feedbackButton.addEventListener("click", function (evt) {
 
 feedbackCloseButton.addEventListener("click", function () {
   feedbackPopup.classList.remove("feedback-show");
+  feedbackPopup.classList.remove("feedback-error");
   feedbackBackground.classList.toggle("overlay-feedback-hide");
   feedbackBackground.classList.toggle("overlay-feedback-show");
+});
+
+feedbackForm.addEventListener("submit", function (evt) {
+  if (!feedbackFormNAS.value || !feedbackFormEmail.value || !feedbackFormComment.value) {
+    evt.preventDefault();
+    feedbackPopup.classList.remove("feedback-error");
+    feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+    feedbackPopup.classList.add("feedback-error");
+  }
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode == 27) {
     if (feedbackPopup.classList.contains("feedback-show")) {
       feedbackPopup.classList.remove("feedback-show");
+      feedbackPopup.classList.remove("feedback-error");
       feedbackBackground.classList.toggle("overlay-feedback-hide");
       feedbackBackground.classList.toggle("overlay-feedback-show");
     }
